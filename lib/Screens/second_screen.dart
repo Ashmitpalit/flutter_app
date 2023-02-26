@@ -19,7 +19,12 @@ class SecondScreen extends StatelessWidget {
           child: Column(
         children: [
           TextField(
-            decoration: const InputDecoration(hintText: "Enter the city name"),
+            decoration: const InputDecoration(
+                filled: true,
+                fillColor: Colors.grey,
+                border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10))),
+                hintText: "Enter the city name"),
             controller: _cityNameController,
           ),
           const SizedBox(
